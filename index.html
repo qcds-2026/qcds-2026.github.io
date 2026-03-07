@@ -1,0 +1,507 @@
+<!doctype html>
+<html>
+<meta http-equiv=Content-Type content="text/html" charset=UTF-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+<title>LQ2025</title>
+<link rel="shortcut icon" href=https://lq-2025.github.io/images/favicon.png type=image/png>
+<meta name=description
+    content="Fifth International Workshop on Learning to Quantify: Methods and Applications (LQ 2025)">
+<meta name=keywords content="some,keywords,for,seo,you,know,google,duckduckgo,and,such">
+<meta name=referrer content="no-referrer-when-downgrade">
+<meta name=HandheldFriendly content="True">
+<meta name=MobileOptimized content="320">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=css/screen.css>
+<link rel=stylesheet href=css/fonts.css type=text/css>
+<meta property="og:url" content="https://lq-2025.github.io/">
+<meta property="og:site_name" content="LQ2025">
+<meta property="og:title" content="LQ2025">
+<meta property="og:description"
+    content="Fifth International Workshop on Learning to Quantify: Methods and Applications (LQ 2025)">
+<meta property="og:locale" content="en">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://lq-2025.github.io/images/cover-image.jpg">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://lq-2025.github.io/images/cover-image.jpg">
+<meta name=twitter:title content="LQ2025">
+<meta name=twitter:description
+    content="Fifth International Workshop on Learning to Quantify: Methods and Applications (LQ 2025)">
+<meta itemprop=name content="LQ2025">
+<meta itemprop=description
+    content="Fifth International Workshop on Learning to Quantify: Methods and Applications (LQ 2025)">
+<meta itemprop=image content="https://lq-2025.github.io/images/cover-image.jpg">
+<style>
+    .blog-title {
+        font-size: 3rem;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    }
+
+    .blog-description {
+        font-size: 2rem;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Creates a readable outline */
+    }
+
+    .profile-pic {
+        float: left;
+        margin: 0 1em 1em 0;
+        border-radius: 50%;
+        border: 1px solid #a7a7a7;
+        width: 80px
+    }
+
+    .organizers {
+        margin: 3em 0
+    }
+
+    .organizer-info {
+        margin-left: 6em
+    }
+
+    .organizer-name {
+        font-size: 2.2rem;
+        font-weight: 700
+    }
+
+    .divimages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto 0;
+        padding: 0
+    }
+
+    .img {
+        display: block;
+        height: auto
+    }
+
+    .mytable {
+        word-break: normal
+    }
+
+    .mytable td,
+    .mytable tr {
+        background-color: transparent !important
+    }
+</style>
+<link rel=apple-touch-icon sizes=180x180 href=https://lq-2025.github.io/images/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=https://lq-2025.github.io/images/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=https://lq-2025.github.io/images/favicon-16x16.png>
+
+<body>
+    <header id=site-head style=background-image:url(images/porto.jpg)>
+        <div class=vertical>
+            <div id=site-head-content class=inner>
+                <h1 class=blog-title>Learning to Quantify: Methods and Applications (LQ 2025)</h1>
+                <h2 class=blog-description>Porto, Portugal &ndash; September 15, 2025 (morning session)</h2><a class='btn site-menu'
+                    data-title-anchor=welcome>Welcome</a>
+                <a class='btn site-menu' data-title-anchor=call-for-papers-for-the-lq-2025-workshop>Call for papers for
+                    the LQ 2025 Workshop</a>
+                <a class='btn site-menu' data-title-anchor=chairs>Chairs</a>
+                <a class='btn site-menu' data-title-anchor=program>Program</a>
+                <!-- <a class='btn site-menu' data-title-anchor=tutorial>Tutorial</a> -->
+                <a class='btn site-menu' data-title-anchor=proceedings>Proceedings</a>
+                <i id=header-arrow class="fa fa-angle-down"></i>
+            </div>
+        </div>
+    </header>
+    <main class=content role=main>
+        <div class=fixed-nav></div>
+        <div class=post-holder>
+            <article id=welcome class='post first'>
+                <header class=post-header>
+                    <h2 class=post-title>Welcome</h2>
+                </header>
+                <section class=post-content>
+                    <p>&ldquo;Learning to Quantify: Methods and Applications&rdquo; is a workshop event
+                        co-located with the <a href=https://ecmlpkdd.org/2025 />ECML/PKDD 2025</a> conference, and will
+                        take place in Porto, Portugal.</p>
+                    <p>Learning to Quantify (LQ - also known as “quantification“, or “supervised prevalence estimation“,
+                        or “class prior estimation“, or “unfolding”) is the task of training class prevalence estimators
+                        via supervised learning. In other words, the task of these trained models is to estimate, given
+                        an unlabelled sample of data items and a set of classes, the prevalence (i.e., relative
+                        frequency) of each such class in the sample.</p>
+                    <p>LQ is interesting in all applications of classification in which the final goal is not
+                        determining which class (or classes) individual unlabelled data items belong to, but estimating
+                        the percentages of data items that belong to the classes of interest, i.e., estimating the
+                        distribution of the unlabelled data items across the classes. Example disciplines whose interest
+                        in labelling data items is at the aggregate level (rather than at the individual level) are the
+                        social sciences, political science, market research, ecological modelling, and epidemiology.</p>
+                    <p>While LQ may in principle be solved by classifying each data item in the sample and counting how
+                        many such items have been labelled with a certain class, it has been shown that this “classify
+                        and count” method yields suboptimal quantification accuracy. As a result, quantification is now
+                        no longer considered a mere byproduct of classification, and has evolved as a task of its own.
+                    </p>
+                    <!-- <p>The goal of the Learning to Quantify tutorial is to provide an introduction to Learning to
+                        Quantify that presents its rationale, applications, methods, and evaluation measures and
+                        methodologies, to researchers who might want to become up-to-speed on this topic. A book on
+                        Learning to Quantify will also be distributed to participants, along with the slides used by the
+                        instructors.</p> -->
+                    <p>The goal of the LQ 2025 workshop is to bring together all researchers interested in methods,
+                        algorithms, evaluation measures, evaluation protocols, and methodologies for LQ, as well as
+                        practitioners interested in the practical application of the above to managing large quantities
+                        of data. The workshop will feature presentations of submitted papers and a final open discussion on &ldquo;what&rsquo;s next in Learning to
+                        Quantify&rdquo;.</p>
+                    <p>LQ 2025 is supported by project “Future Artificial Intelligence Research” (FAIR), project “Quantification under Dataset Shift” (QuaDaSh), and project “Strengthening the Italian RI for Social Mining and Big Data Analytics” (SoBigData.it), all funded by the European Union under the NextGenerationEU funding scheme (CUP B53D22000980006, CUP B53D23026250001, CUP B53C22001760006, respectively) and by the Agency for Science, Business Competitiveness, and Innovation of the Principality 
+                        of Asturias in Spain (SEKUENS) through the project GRU-GIC-24-018.</p>
+                     <div class=divimages>
+                        <img src=images/fair.png class=img alt="Fair logo" width=200>
+                        <img src=images/quadash.png class=img alt="QuaDash logo" width=200>
+                        <img src=images/sobigdata.png class=img alt="SoBigData logo" width=200>
+                    </div>
+                </section>
+            </article>
+            <div class=post-after></div>
+        </div>
+        <div class=post-holder>
+            <article id=call-for-papers-for-the-lq-2025-workshop class=post>
+                <header class=post-header>
+                    <h2 class=post-title>Call for papers for the LQ 2025 Workshop</h2>
+                </header>
+                <section class=post-content>
+                    <p>We seek papers on any of the following topics, which will form the main themes of the LQ 2025
+                        workshop:</p>
+                    <ul>
+                        <li>Binary, multiclass, multilabel, and ordinal LQ</li>
+                        <li>Supervised algorithms for LQ</li>
+                        <li>Semi-supervised / transductive LQ</li>
+                        <li>Deep learning for LQ</li>
+                        <li>Representation learning for LQ</li>
+                        <li>LQ and dataset shift</li>
+                        <li>Evaluation measures for LQ</li>
+                        <li>Experimental protocols for the evaluation of LQ</li>
+                        <li>Quantification of streaming data</li>
+                        <li>Cost-sensitive quantification</li>
+                        <li>Improving classifier performance via LQ</li>
+                        <li>New datasets for evaluating quantification systems</li>
+                        <li>Novel applications of LQ</li>
+                    </ul>
+                    <p>and other topics of relevance to LQ. Two categories of papers are of interest:</p>
+                    <ul>
+                        <li>papers reporting original, unpublished research;</li>
+                        <li>papers {published in 2025 / currently under submission / accepted in 2025} at other
+                            {workshops / conferences / journals}, provided this double submission does not violate the
+                            rules of these {workshops / conferences / journals}.</li>
+                    </ul>
+                    <h5 id=submission>Submission</h5>
+                    <p>Papers should be submitted (specifying which of the two above categories they belong to) via <a
+                            href="https://easychair.org/conferences/?conf=lq2025">EasyChair</a>.</p>
+                    <p>Papers should be formatted according to <a
+                            href=https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines>Springer&rsquo;s
+                            LNCS template</a>, and should be up to 16 pages (including references) in length; however,
+                        this is just the upper bound, and contributions of any length up to this bound will be
+                        considered.</p>
+                    <h5 id=other-information>Other information</h5>
+                    <p>Important: By submitting a paper the authors commit, in case of acceptance, to have one of them register (according to the rules set by the ECML/PKDD 2025 organizers) and present the paper at the workshop. The workshop will
+                        be a hybrid event, but it is strongly recommended that authors of accepted papers present the
+                        work in-presence. The proceedings of the workshop will not be formally published, so as to allow
+                        authors to resubmit their work to other conferences. Informal proceedings will be published on
+                        the workshop website; however, for each accepted paper, it will be left at the discretion of the
+                        authors to decide whether to contribute their paper or not to these proceedings.</p>
+                    <h5 id=important-dates-all-deadlines-are-2359-aoe>Important dates (all deadlines are 23:59 AoE)</h5>
+                    <ul>
+                        <li>Paper submission deadline: <s>June 14, 2025</s> June 21, 2025</li>
+                        <li>A/R notification deadline: July 14, 2025</li>
+                        <li>Final copy submission deadline: September 5, 2025</li>
+                        <li>Workshop: September 15, 2025</li>
+                    </ul>
+                </section>
+            </article>
+            <div class=post-after></div>
+        </div>
+        <div class=post-holder>
+            <article id=chairs class=post>
+                <header class=post-header>
+                    <h2 class=post-title>Chairs</h2>
+                </header>
+                <section class=post-content>
+                    <section class=organizers><img
+                            src="https://www-ai.cs.tu-dortmund.de/MG_4302Q_small.jpg?self=%24fvx0vwks8w&part=data"
+                            alt="Mirko Bunse" class=profile-pic>
+                        <div class=organizer-info>
+                            <p id=mirko-bunse class=organizer-name>Mirko Bunse
+                            </p>
+                            <p id=artificial-intelligence-center-university-of-oviedo-spain>Artificial Intelligence
+                                Group, TU Dortmund University, Germany</p>
+                        </div>
+                    </section>
+                    <section class=organizers><img
+                            src="https://scholar.googleusercontent.com/citations?view_op=view_photo&amp;user=09PnhhoAAAAJ&amp;citpid=1"
+                            alt="Pablo González" class=profile-pic></p>
+                        <div class=organizer-info>
+                            <p id=pablo-gonzlez class=organizer-name>Pablo González</p>
+                            <p id=artificial-intelligence-center-university-of-oviedo-spain-1>Artificial Intelligence
+                                Center, University of Oviedo, Spain</p>
+                        </div>
+                    </section>
+                    <section class=organizers><img
+                            src="https://scholar.googleusercontent.com/citations?view_op=view_photo&amp;user=4RIy5E4AAAAJ&amp;citpid=7"
+                            alt="Alejandro Moreo" class=profile-pic>
+                        <div class=organizer-info>
+                            <p id=alejandro-moreo class=organizer-name>Alejandro Moreo</p>
+                            <p
+                                id=istituto-di-scienza-e-tecnologie-dellinformazione-consiglio-nazionale-delle-ricerche-pisa-italy>
+                                Istituto di Scienza e Tecnologie dell’Informazione, Consiglio Nazionale delle Ricerche,
+                                Pisa, Italy</p>
+                        </div>
+                    </section>
+                    <section class=organizers><img
+                            src="https://scholar.googleusercontent.com/citations?view_op=view_photo&amp;user=WZBcZV4AAAAJ&amp;citpid=33"
+                            alt="Fabrizio Sebastiani" class=profile-pic>
+                        <div class=organizer-info>
+                            <p id=fabrizio-sebastiani class=organizer-name>Fabrizio Sebastiani</h3>
+                            <p
+                                id=istituto-di-scienza-e-tecnologie-dellinformazione-consiglio-nazionale-delle-ricerche-pisa-italy-1>
+                                Istituto di Scienza e Tecnologie dell’Informazione, Consiglio Nazionale delle Ricerche,
+                                Pisa, Italy</p>
+                        </div>
+                    </section>
+                    <h5 id=program-committee>Program Committee</h5>
+                    <ul>
+                        <li>Gustavo Batista, University of New South Wales, AU</li>
+                        <li>Juan José del Coz, University of Oviedo, ES</li>
+                        <li>Andrea Esuli, Consiglio Nazionale delle Ricerche, IT</li>
+                        <li>Cèsar Ferri, Universitat Politècnica de València, ES</li>
+                        <li>Wei Gao, Singapore Management University, SG</li>
+                        <li>Rafael Izbicki, Federal University of São Carlos, BR</li>
+                        <li>André G. Maletzke, Universidade Estadual do Oeste do Paraná, BR</li>
+                        <li>Tobias Schumacher, University of Mannheim, DE</li>
+                        <li>Marco Saerens, Catholic University of Louvain, BE</li>
+                        <li>Dirk Tasche, Swiss Financial Market Supervisory Authority, CH</li>
+                        <li>Pawel Piotr Czyz, ETH AI Center, CH</li>
+                        <li>Zahra Donyavi, University of New South Wales, AU</li>
+                    </ul>
+                </section>
+            </article>
+            <div class=post-after></div>
+        </div>
+        <div class=post-holder>
+            <article id=program class='post last'>
+                <header class=post-header>
+                    <h2 class=post-title>Program</h2>
+                </header>
+                <section class=post-content>
+                    <p>When: <strong>Monday, September 15, 2025</strong> (morning session).</p>
+                    <!-- <p>Where: <a href=https://ecmlpkdd.org/2025/venue-venue />Beta 1</a></p> -->
+                    <!-- <p>More information coming soon.</p> -->
+                    <p>This preliminary program might be subject to changes.</p>
+                    <table class=mytable>
+                        <tr>
+                            <!-- <td></td> -->
+                            <td>08:00</td>
+                            <td>09:00</td>
+                            <td><i>Conference Registration</i></td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Chair: Mirko Bunse</td> -->
+                            <td>09:00</td>
+                            <td>09:10</td>
+                            <td>Workshop Chairs' Introduction</td>
+                        </tr>
+                        <tr>
+                            <!-- <td rowspan=3>Chair: Mirko Bunse</td> -->
+                            <td>09:10</td>
+                            <td>09:35</td>
+                            <td><strong>Stabilizing EM-Based Quantification under Label Shift</strong><br>by Pablo González, Olaya Pérez Mon and Juan José Del Coz</td>
+                        </tr>
+                        <tr>
+                            <td>09:35</td>
+                            <td>10:00</td>
+                            <td><strong>Classify-and-Count with Prediction Sets: A Conformal Approach to Label Distribution Estimation</strong><br>by Evgueni Smirnov and Filip Schlembach</td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td>10:25</td>
+                            <td><strong>An Efficient Method for Deriving Confidence Intervals in Aggregative Quantification</strong><br>by Alejandro Moreo and Nicola Salvati</td>
+                        </tr>
+                        <tr>
+                            <!-- <td></td> -->
+                            <td>10:25</td>
+                            <td>11:00</td>
+                            <td><i>Coffee Break</i></td>
+                        </tr>
+                        <tr>
+                            <!-- <td rowspan=1>Chair: Mirko Bunse</td> -->
+                            <td>11:00</td>
+                            <td>11:25</td>
+                            <td><strong>An Evaluation of Methods for Detection of Prior Shift</strong><br>by David Kaftan and Richard Povinelli</td>
+                        </tr>
+                        <tr>
+                            <!-- <td rowspan=5>Chair: Alejandro Moreo</td> -->
+                            <td>11:25</td>
+                            <td>11:50</td>
+                            <td><strong>Recalibrating binary probabilistic classifiers</strong><br>by Dirk Tasche</td>
+                        </tr>
+                        <tr>
+                            <td>11:50</td>
+                            <td>12:15</td>
+                            <td><strong>Match: A Maximum-Likelihood Approach for Classification under Label Shift</strong><br>by Zahra Donyavi, Feiyu Li, Yunrui Zhang, Diego Silva and Gustavo Batista</td>
+                        </tr>
+                        <tr>
+                            <td>12:15</td>
+                            <td>12:40</td>
+                            <td><strong>QuaDapt: Drift-Resilient Quantification via Parameters Adaptation</strong><br>by João Pedro Ortega, Luiz Fernando Luth Junior, Willian Zalewski and André Maletzke</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>Chair: Alejandro Moreo</td> -->
+                            <td>12:40</td>
+                            <td>13:00</td>
+                            <td>Closing discussion</td>
+                        </tr>
+                        <tr>
+                            <!-- <td></td> -->
+                            <td>13:00</td>
+                            <td>14:00</td>
+                            <td><i>Lunch</i></td>
+                        </tr>
+                        <!-- <tr>
+                            <td></td>
+                            <td>09:00</td>
+                            <td>11:00</td>
+                            <td><strong>Tutorial: Learning to Quantify, Part I</strong>, by Mirko Bunse, Alejandro Moreo
+                                and Fabrizio Sebastiani</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>11:00</td>
+                            <td>11:20</td>
+                            <td>Coffee Break</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>11:20</td>
+                            <td>13:00</td>
+                            <td><strong>Tutorial: Learning to Quantify, Part II</strong>, by Mirko Bunse, Alejandro
+                                Moreo and Fabrizio Sebastiani</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>13:00</td>
+                            <td>14:00</td>
+                            <td>Lunch Break</td>
+                        </tr>
+                        <tr>
+                            <td>Chair: Mirko Bunse</td>
+                            <td>14:20</td>
+                            <td>14:30</td>
+                            <td>Workshop Chairs' Introduction</td>
+                        </tr>
+                        <tr>
+                            <td rowspan=3>Chair: Mirko Bunse</td>
+                            <td>14:30</td>
+                            <td>14:50</td>
+                            <td><strong>Comments on Friedman's Method for Class Distribution Estimation</strong>, by
+                                Dirk Tasche</td>
+                        </tr>
+                        <tr>
+                            <td>14:50</td>
+                            <td>15:10</td>
+                            <td><strong>Quantification Over Time</strong>, by Feiyu Li, Hassan H. Gharakheili and
+                                Gustavo Batista</td>
+                        </tr>
+                        <tr>
+                            <td>15:10</td>
+                            <td>15:30</td>
+                            <td><strong>Enhancing Quantification through Meta-Learning</strong>, by Guilherme Gomes,
+                                Willian Zalewski and Andre Maletzke</td>
+                        </tr>
+                        <tr>
+                            <td rowspan=1>Chair: Mirko Bunse</td>
+                            <td>15:30</td>
+                            <td>15:50</td>
+                            <td><strong>An Overview of LeQua 2025</strong>, by Andrea Esuli, Alejandro Moreo, Fabrizio Sebastiani and Gianluca Sperduti</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>16:00</td>
+                            <td>16:20</td>
+                            <td>Coffee Break</td>
+                        </tr>
+                        <tr>
+                            <td rowspan=5>Chair: Alejandro Moreo</td>
+                            <td>16:20</td>
+                            <td>16:30</td>
+                            <td><strong>Evaluating Continuous Sweep and Comparison Using Underlying
+                                    Classifiers</strong>, by Kevin Kloos. UniLeiden at LeQua2025</td>
+                        </tr>
+                        <tr>
+                            <td>16:30</td>
+                            <td>16:40</td>
+                            <td><strong>Ensemble Learning to Quantify</strong>, by Zahra Donyavi, Feiyu Li and Gustavo
+                                Batista. The CSE UNSW Team at LeQua2025</td>
+                        </tr>
+                        <tr>
+                            <td>16:40</td>
+                            <td>16:50</td>
+                            <td><strong>Regularized Soft-Max Likelihood Maximization</strong>, by Tobias
+                                Lotz and Mirko Bunse. Lamarr at LeQua2025</td>
+                        </tr>
+                        <tr>
+                            <td>16:50</td>
+                            <td>17:00</td>
+                            <td><strong>Quantification via Gaussian Latent Space Representations.</strong>, by Olaya Pérez and Pablo
+                                González. UniOvi at LeQua2025</td>
+                        </tr>
+                        <tr>
+                            <td>17:00</td>
+                            <td>17:30</td>
+                            <td>LeQua joint discussion</td>
+                        </tr>
+                        <tr>
+                            <td>Chair: Alejandro Moreo</td>
+                            <td>17:30</td>
+                            <td>18:00</td>
+                            <td>Open discussion</td>
+                        </tr> -->
+                    </table>
+                </section>
+            </article>
+            <div class=post-after></div>
+        </div>
+        <!-- <div class=post-holder>
+            <article id=tutorial class='post last'>
+                <header class=post-header>
+                    <h2 class=post-title>Tutorial</h2>
+                </header>
+                <section class=post-content>
+                    <p>Here you can find the links to the resources corresponding to the tutorial: Learning to Quantify</p>
+                    <ul>
+                        <li><a href=tutorial/Tutorial_Quantification_ECML_PKDD_2025.pdf target="_blank">A Tutorial on Quantification [PDF]</a></li>
+                        <li><a href=tutorial/Supervised_methods_for_quantification.pdf target="_blank">Supervised Methods for Quantification [PDF]</a></li>
+                        <li><a href=tutorial/QuaPy_slides_ECML_PKDD_2025.pdf target="_blank">Conducting Research Experiments with QuaPy [PDF]</a></li>
+                    </ul>
+                </section>
+            </article>
+            <div class=post-after></div>
+        </div> -->
+        <div class=post-holder>
+            <article id=proceedings class='post last'>
+                <header class=post-header>
+                    <h2 class=post-title>Proceedings</h2>
+                </header>
+                <section class=post-content>
+                    <p>The proceedings of LQ 2025 are available <a href="proceedings/CompleteVolume.pdf" target="_blank">here.</a></p>
+                </section>
+            </article>
+            <div class=post-after></div>
+        </div>
+
+        
+    </main>
+    <footer class=site-footer>
+        <div class=inner>
+            <section class=copyright>©LQ2025 (<a href=mailto:LQ2025Chairs@isti.cnr.it>LQ2025Chairs@isti.cnr.it</a>)
+            </section>
+            <section></section>
+            <section><a href=https://themes.gohugo.io/hugo-scroll />Design</a> template
+                built with ♥️ by
+                <a href=https://www.janraasch.com title="Jan Raasch">Jan Raasch</a>
+            </section>
+        </div>
+    </footer>
+    <script type=text/javascript src=js/jquery-1.11.3.min.js></script>
+    <script type=text/javascript src=js/icons.js></script>
+    <script type=text/javascript src=js/index.js></script>
+</body>
+
+</html>
