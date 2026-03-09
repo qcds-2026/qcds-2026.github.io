@@ -113,35 +113,10 @@
                     <h2 class=post-title>Welcome</h2>
                 </header>
                 <section class=post-content>
-                    <p>&ldquo;Quantification and Classification under Dataset Shift&rdquo; is a workshop event
-                        co-located with the <a href=https://2026.ecmlpkdd.org/ />ECML/PKDD 2026</a> conference.</p>
-                    <p>Learning to Quantify (LQ - also known as “quantification“, or “supervised prevalence estimation“,
-                        or “class prior estimation“, or “unfolding”) is the task of training class prevalence estimators
-                        via supervised learning. In other words, the task of these trained models is to estimate, given
-                        an unlabelled sample of data items and a set of classes, the prevalence (i.e., relative
-                        frequency) of each such class in the sample.</p>
-                    <p>LQ is interesting in all applications of classification in which the final goal is not
-                        determining which class (or classes) individual unlabelled data items belong to, but estimating
-                        the percentages of data items that belong to the classes of interest, i.e., estimating the
-                        distribution of the unlabelled data items across the classes. Example disciplines whose interest
-                        in labelling data items is at the aggregate level (rather than at the individual level) are the
-                        social sciences, political science, market research, ecological modelling, and epidemiology.</p>
-                    <p>While LQ may in principle be solved by classifying each data item in the sample and counting how
-                        many such items have been labelled with a certain class, it has been shown that this “classify
-                        and count” method yields suboptimal quantification accuracy. As a result, quantification is now
-                        no longer considered a mere byproduct of classification, and has evolved as a task of its own.
-                    </p>
-                    <p>The new workshop on QCDS broadens the quantification focus of LQ to the
-                        more general theme of classification under dataset shift. We deeply believe that
-                        this new breadth will be even more attractive for the ECML/PKDD community,
-                        since (a) its main topics squarely fall within the machine learning and data
-                        mining areas, (b) quantification is still a relatively unknown task that many
-                        ECML/PKDD attendees can profit from, and (c) dataset shift is a highly relevant
-                        and broad topic that holds fruitful interactions with other areas of ML and DM.</p>
-                    <p>The goal of the QCDS 2026 workshop is to bring together all researchers interested in methods,
-                        algorithms, evaluation measures, evaluation protocols, and methodologies for LQ, as well as
-                        practitioners interested in the practical application of the above to managing large quantities
-                        of data. The workshop will feature presentations of submitted papers and a final open discussion on &ldquo;what&rsquo;s next in Quantification and Classification under Dataset Shift&rdquo;.</p>
+                    <p>&ldquo;Quantification and Classification under Dataset Shift&rdquo; (QCDS) is a workshop event
+                        co-located with the <a href=https://ecmlpkdd.org/2026/ />ECML/PKDD 2026</a> conference. QCDS is a follow-up of the <a href="http://learningtoquantify.org/">Learning to Quantify (LQ)</a> workshop series, and broadens the focus from quantification to the more general theme of classification under dataset shift.</p>
+                    <p>Quantification and classification are two supervised learning tasks that are both hampered by changes in data distributions, so-called dataset shifts. The two tasks differ in what they learn to predict: while classification predicts the class label of each individual data point, quantification deals with the prediction of the prevalence (i.e., the relative frequency) of each class in every unlabelled set of data. Predicting this prevalence is worthwhile whenever it can change from set to set, due to various types of dataset shift that may exist between these sets and the training data. Both classifiers and quantifiers can suffer from these shifts, at least as long as they are not designed to handle the current type of shift robustly. Notably, a robust quantifier can facilitate robust classification and a robust classifier can facilitate robust quantification under dataset shift.</p>
+                    <p>By broadening our scope, QCDS 2026 aims to engage the diverse expertise of the ECML/PKDD community. As dataset shift remains a fundamental challenge in real-world deployments, understanding the interplay between classification and quantification is more critical than ever. This workshop provides a collaborative forum for researchers and practitioners to share breakthroughs in robust methodology, explore emerging applications, and bridge the gap between these two vital fields.</p>
                     <p>QCDS 2026 is supported by project “Future Artificial Intelligence Research” (FAIR), project “Quantification under Dataset Shift” (QuaDaSh), and project “Strengthening the Italian RI for Social Mining and Big Data Analytics” (SoBigData.it), all funded by the European Union under the NextGenerationEU funding scheme (CUP B53D22000980006, CUP B53D23026250001, CUP B53C22001760006, respectively) and by the Agency for Science, Business Competitiveness, and Innovation of the Principality 
                         of Asturias in Spain (SEKUENS) through the project GRU-GIC-24-018.</p>
                      <div class=divimages>
@@ -176,7 +151,7 @@
                     <p>and other topics of relevance to QCDS. Two categories of papers are of interest:</p>
                     <ul>
                         <li>papers reporting original, unpublished research;</li>
-                        <li>papers {published in 2025 / currently under submission / accepted in 2025} at other
+                        <li>papers {published in 2026 / currently under submission / accepted in 2026} at other
                             {workshops / conferences / journals}, provided this double submission does not violate the
                             rules of these {workshops / conferences / journals}.</li>
                     </ul>
@@ -189,9 +164,7 @@
                         this is just the upper bound, and contributions of any length up to this bound will be
                         considered.</p>
                     <h5 id=other-information>Other information</h5>
-                    <p>Important: By submitting a paper the authors commit, in case of acceptance, to have one of them register (according to the rules set by the ECML/PKDD 2026 organizers) and present the paper at the workshop. The workshop will
-                        be a hybrid event, but it is strongly recommended that authors of accepted papers present the
-                        work in-presence. The proceedings of the workshop will not be formally published, so as to allow
+                    <p>Important: By submitting a paper the authors commit, in case of acceptance, to have one of them register (according to the rules set by the ECML/PKDD 2026 organizers) and present the paper at the workshop. The proceedings of the workshop will not be formally published, so as to allow
                         authors to resubmit their work to other conferences. Informal proceedings will be published on
                         the workshop website; however, for each accepted paper, it will be left at the discretion of the
                         authors to decide whether to contribute their paper or not to these proceedings.</p>
@@ -232,7 +205,7 @@
                         </div>
                     </section>
                     <section class=organizers><img
-                            src="https://www.hcm-mannheim.de/files/content/mitarbeiter/huelle/huellermeier_eyke.jpg"
+                            src="https://www.deutsches-museum.de/assets/_processed_/a/4/csm_Forschung_Projekt_IGGI_Beirat_photo_Eyke_H%C3%BCllermeyer_997d7589a9.jpg"
                             alt="Eyke Hüllermeier" class=profile-pic>
                         <div class=organizer-info>
                             <p id=eyke-hullemeier class=organizer-name>Eyke Hüllermeier</p>
@@ -265,29 +238,29 @@
                     </section>
                     <h5 id=program-committee>Program Committee</h5>
                     <ul>
-                        <li>Amr Alexandari, Stanford University, US</li>
-                        <li>Haoyue Bai, University of Wisconsin-Madison, US</li>
+                        <!-- <li>Amr Alexandari, Stanford University, US</li> -->
+                        <!-- <li>Haoyue Bai, University of Wisconsin-Madison, US</li> -->
                         <li>Gustavo Batista, University of New South Wales, AU</li>
-                        <li>Pawel Piotr Czyz, ETH AI Center, CH</li>
+                        <!-- <li>Pawel Piotr Czyz, ETH AI Center, CH</li> -->
                         <li>Clemens Damke, Ludwig Maximilian University of Munich, DE</li>
                         <li>Juan José del Coz, University of Oviedo, ES</li>
-                        <li>Zahra Donyavi, University of New South Wales, AU</li>
+                        <!-- <li>Zahra Donyavi, University of New South Wales, AU</li> -->
                         <li>Andrea Esuli, Consiglio Nazionale delle Ricerche, IT</li>
                         <li>Cèsar Ferri, Universitat Politècnica de València, ES</li>
                         <li>Peter Flach, University of Bristol, UK</li>
-                        <li>Wei Gao, Singapore Management University, SG</li>
+                        <!-- <li>Wei Gao, Singapore Management University, SG</li>
                         <li>Saurabh Garg, Thinking Machines, US</li>
-                        <li>Devin Guillory, UC Berkeley, US</li>
+                        <li>Devin Guillory, UC Berkeley, US</li> -->
                         <li>Barbara Hammer, University of Bielefeld, DE</li>
                         <li>Rafael Izbicki, Federal University of São Carlos, BR</li>
                         <li>Mira Jürgens, Gent University, BE</li>
-                        <li>Zachary Lipton, Carnegie Mellon University, US</li>
+                        <!-- <li>Zachary Lipton, Carnegie Mellon University, US</li> -->
                         <li>André Maletzke, Universidade Estadual do Oeste do Paraná, BR</li>
                         <li>Olaya Pérez-Mon, University of Oviedo, ES</li>
                         <li>Teodora Popordanovska, KU Leuven, BE</li>
                         <li>Marco Saerens, Catholic University of Louvain, BE</li>
                         <li>Tobias Schumacher, University of Mannheim, DE</li>
-                        <li>Amos Storkey, University of Edinburgh, UK</li>
+                        <!-- <li>Amos Storkey, University of Edinburgh, UK</li> -->
                         <li>Dirk Tasche, North-West University, SA</li>
                         <li>Lorenzo Volpi, Consiglio Nazionale delle Ricerche, IT</li>
                         <li>Willem Waegeman, Ghent University, BE</li>
